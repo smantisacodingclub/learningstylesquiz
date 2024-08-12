@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Style Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navdiv">    
+        <figure>
+            <img src="ORIGINAL LOGO NO BACKGROUND.png" alt="Logo SCC" class="image">
+        </figure>
+        <div class="title">
+            <p class="judul">
+                <span class="kata-1">KENALI</span><span class="kata-2"> TIPE</span><span class="kata-3"> BELAJAR</span>
+            </p>
+        </div>
+        <ul>
+            <li><a target="_blank" href="mailto:smantisacodingclub@gmail.com" class="link">Contact</a></li>
+            <li><a target="_blank" href="http://" class="link">About us</a></li>
+        </ul>
+    </div>
+
+    <div class="progress-container">
+        <div class="progress">
+            <div class="progress-fill"></div>
+            <span class="progress-text">0%</span>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h1 id="h1-element">Isilah pernyataan-pernyataan di bawah ini!</h1>
+        <div class="question-wrapper" id="question-wrapper">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="question-box solitary"> <!-- Pertanyaan 1 -->
+                    <p class="question">Anda mempunyai ketertarikan atau hobi tersendiri yang kamu lebih suka melakukannya sendirian.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q1" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q1" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q1" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box logical"> <!-- Pertanyaan 2 -->
+                    <p class="question">Anda menyusun rencana dan agenda perjalanan. Anda mengumpulkan daftar terperinci, seperti daftar hal-hal yang harus dilakukan, dan Anda memberi nomor dan memberi prioritas hal-hal tersebut.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q2" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q2" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q2" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box aural"> <!-- Pertanyaan 3 -->
+                    <p class="question">Jingle, tema, atau sebagian/potongan dari lagu-lagu muncul di pikiran Anda secara acak.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q3" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q3" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q3" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box logical"> <!-- Pertanyaan 4 -->
+                    <p class="question">Anda lebih memilih mempelajari matematika dan sains di sekolah.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q4" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q4" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q4" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box solitary"> <!-- Pertanyaan 5 -->
+                    <p class="question">Anda bahagia di sekolah/instansi Anda. Anda menyukai beberapa hal sendirian dan jauh dari yang lain.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q5" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q5" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q5" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box social"> <!-- Pertanyaan 6 -->
+                    <p class="question">Anda menikmati belajar di dalam kelas bersama orang lain. Anda menikmati interaksi yang membantu pembelajaran anda.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q6" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q6" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q6" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box verbal"> <!-- Pertanyaan 7 -->
+                    <p class="question">Anda suka membaca segala hal, seperti buku, majalah, menu, kardus susu, tulisan-tulisan di bungkus makanan, dll.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q7" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q7" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q7" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>                
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="question-box visual"> <!-- Pertanyaan 8 -->
+                    <p class="question">Anda dapat dengan mudah memvisualisasikan objek, bangunan, situasi, dll dari denah atau deskripsi.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q8" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q8" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q8" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box solitary"> <!-- Pertanyaan 9 -->
+                    <p class="question">Anda berorientasi pada tujuan dan tahu arah yang Anda tuju.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q9" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q9" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q9" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box social"> <!-- Pertanyaan 10 -->
+                    <p class="question">Anda lebih suka permainan dan olahraga tim seperti sepak bola, bola basket, bola voli, dll.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q10" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q10" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q10" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box visual"> <!-- Pertanyaan 11 -->
+                    <p class="question">Anda dapat melakukan navigasi dengan baik dan menggunakan peta dengan mudah. Anda jarang tersesat. Anda memiliki orientasi terhadap arah yang baik. Anda biasanya tahu ke arah mana untuk Utara.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q11" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q11" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q11" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box solitary"> <!-- Pertanyaan 12 -->
+                    <p class="question">Anda lebih suka belajar atau bekerja sendirian.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q12" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q12" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q12" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box social"> <!-- Pertanyaan 13 -->
+                    <p class="question">Anda suka menjadi mentor atau memandu orang lain.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q13" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q13" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q13" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box solitary"> <!-- Pertanyaan 14 -->
+                    <p class="question">Anda menghabiskan waktu sendirian untuk merenung dan memikirkan aspek-aspek penting dalam hidup Anda.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q14" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q14" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q14" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="question-box verbal"> <!-- Pertanyaan 15 -->
+                    <p class="question">Dalam percakapan biasa, Anda sering mengacu pada hal-hal lain yang pernah Anda dengar atau baca.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q15" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q15" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q15" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box logical"> <!-- Pertanyaan 16 -->
+                    <p class="question">Anda senang menghubungkan antara angka dan objek. Anda suka mengkategorikan atau mengelompokkan hal-hal untuk membantu Anda memahami hubungan di antara objek tersebut.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q16" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q16" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q16" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box solitary"> <!-- Pertanyaan 17 -->
+                    <p class="question">Anda menyimpan jurnal/diari/catatan untuk merekam pemikiran/ide Anda.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q17" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q17" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q17" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box social"> <!-- Pertanyaan 18 -->
+                    <p class="question">Anda berkomunikasi dengan baik dengan orang lain, dan Anda sering menjadi moderator/penengah bagi teman-teman Anda.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q18" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q18" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q18" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                <div class="question-box physical"> <!-- Pertanyaan 19 -->
+                    <p class="question">Anda suka olahraga dan berolahraga.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q19" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q19" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q19" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box social"> <!-- Pertanyaan 20 -->
+                    <p class="question">Anda suka mendengarkan. Orang senang berbicara dengan Anda karena mereka merasa Anda memahami mereka.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q20" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q20" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q20" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box aural"> <!-- Pertanyaan 21 -->
+                    <p class="question">Anda suka mendengarkan musik: di mobil/angkutan, saat belajar, atau saat bekerja.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q21" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q21" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q21" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+            </div>
+        
+
+            <!-- Slide 4 -->
+            <div class="slide">
+                <div class="question-box logical"> <!-- Pertanyaan 22 -->
+                    <p class="question">Anda dapat menyeimbangkan keuangan, dan Anda suka menetapkan anggaran/budget (mengatur keuangan) dan menetapkan tujuan numerik lainnya.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q22" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q22" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q22" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box social"> <!-- Pertanyaan 23 -->
+                    <p class="question">Anda memiliki sejumlah teman yang sangat dekat.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q23" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q23" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q23" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box physical"> <!-- Pertanyaan 24 -->
+                    <p class="question">Anda menggunakan banyak gerakan tangan atau bahasa tubuh fisik lainnya saat berkomunikasi dengan orang lain.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q24" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q24" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q24" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box verbal"> <!-- Pertanyaan 25 -->
+                    <p class="question">Bahasa Inggris, bahasa dan sastra adalah mata pelajaran favorit di sekolah.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q25" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q25" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q25" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box physical"> <!-- Pertanyaan 26 -->
+                    <p class="question">Anda lebih suka membuat model, atau membuat puzzle.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q26" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q26" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q26" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box social"> <!-- Pertanyaan 27 -->
+                    <p class="question">Anda lebih suka membicarakan masalah, isu-isu, atau ide dengan orang lain, daripada mengerjakannya sendiri.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q27" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q27" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q27" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box aural"> <!-- Pertanyaan 28 -->
+                    <p class="question">Musik adalah pelajaran favorit anda.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q28" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q28" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q28" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="slide">
+                <div class="question-box visual"> <!-- Pertanyaan 29 -->
+                    <p class="question">Di sekolah Anda lebih suka seni, gambar teknik, geometri.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q29" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q29" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q29" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box verbal"> <!-- Pertanyaan 30 -->
+                    <p class="question">Anda suka bercerita, metafora, atau anekdot.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q30" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q30" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q30" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box logical"> <!-- Pertanyaan 31 -->
+                    <p class="question">Anda suka mengidentifikasi kelemahan logika dalam kata-kata dan tindakan orang lain.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q31" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q31" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q31" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                <div class="question-box visual"> <!-- Pertanyaan 32 -->
+                    <p class="question">Anda suka menggunakan kamera (memotret) atau merekam video untuk mengabadikan hal-hal di sekitar Anda.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q32" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q32" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q32" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box aural"> <!-- Pertanyaan 33 -->
+                    <p class="question">Anda menggunakan ritme atau sajak untuk mengingat sesuatu, misalnya nomor telepon, kata sandi, ucapan kecil lainnya.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q33" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q33" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q33" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box physical"> <!-- Pertanyaan 34 -->
+                    <p class="question">Di sekolah Anda menyukai olahraga, pengerjaan kayu atau logam, kerajinan tangan, patung, tembikar.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q34" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q34" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q34" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box verbal"> <!-- Pertanyaan 35 -->
+                    <p class="question">Anda memiliki kosakata yang bagus, dan suka menggunakan kata yang tepat pada waktu yang tepat.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q35" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q35" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q35" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>                
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="slide">
+                <div class="question-box physical"> <!-- Pertanyaan 36 -->
+                    <p class="question">Anda menyukai tekstur dan nuansa dari pakaian, furnitur, atau objek lainnya.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q36" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q36" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q36" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box solitary"> <!-- Pertanyaan 37 -->
+                    <p class="question">Anda lebih suka berlibur di pulau terpencil yang sepi daripada resort atau kapal pesiar dengan banyak orang di dalamnya.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q37" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q37" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q37" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box visual"> <!-- Pertanyaan 38 -->
+                    <p class="question">Anda menyukai buku dengan banyak diagram dan ilustrasi.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q38" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q38" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q38" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box verbal"> <!-- Pertanyaan 39 -->
+                    <p class="question">Anda mudah mengekspresikan diri, baik secara lisan maupun tertulis.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q39" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q39" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q39" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box social"> <!-- Pertanyaan 40 -->
+                    <p class="question">Anda suka bermain game dengan orang lain, seperti kartu dan permainan papan (catur, monopoli, ular tangga, dll.)</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q40" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q40" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q40" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box logical"> <!-- Pertanyaan 41 -->
+                    <p class="question">Anda menggunakan contoh dan referensi khusus untuk mendukung dan memperjelas sudut pandang Anda.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q41" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q41" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q41" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box aural"> <!-- Pertanyaan 42 -->
+                    <p class="question">Anda memperhatikan suara dari berbagai hal. Anda dapat membedakan antara instrumen-instrumen, mobil, atau pesawat terbang berdasarkan suaranya.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q42" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q42" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q42" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 7 -->
+            <div class="slide">
+                <div class="question-box visual"> <!-- Pertanyaan 43 -->
+                    <p class="question">Anda memiliki selera yang bagus tentang warna.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q43" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q43" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q43" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box verbal"> <!-- Pertanyaan 44 -->
+                    <p class="question">Anda suka membuat permainan kata-kata, bersilat lidah, membuat sajak/puisi.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q44" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q44" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q44" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box physical"> <!-- Pertanyaan 45 -->
+                    <p class="question">Anda suka memikirkan ide dan masalah saat melakukan aktifitas fisik.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q45" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q45" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q45" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box solitary"> <!-- Pertanyaan 46 -->
+                    <p class="question">Anda membaca buku pengembangan diri, mengikuti seminar pengembangan diri, atau melakukan aktifitas pengembangan diri untuk mengenal lebih dalam diri anda sendiri.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q46" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q46" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q46" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box aural"> <!-- Pertanyaan 47 -->
+                    <p class="question">Anda dapat memainkan alat musik atau bernyanyi pada/mendekati nada yang sesuai.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q47" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q47" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q47" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box verbal"> <!-- Pertanyaan 48 -->
+                    <p class="question">Anda menyukai teka-teki silang atau tebak-tebakan.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q48" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q48" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q48" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box logical"> <!-- Pertanyaan 49 -->
+                    <p class="question">Anda menyukai permainan logika dan permainan asah otak. Anda menyukai catur dan permainan stategi lainnya.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q49" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q49" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q49" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8 -->
+            <div class="slide">
+                <div class="question-box social"> <!-- Pertanyaan 50 -->
+                    <p class="question">Anda suka berkegiatan di luar rumah dengan orang lain dalam pesta atau acara lainnya.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q50" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q50" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q50" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                <div class="question-box physical"> <!-- Pertanyaan 51 -->
+                    <p class="question">Anda suka membongkar sesuatu (perabot, alat elektronik, dll.) untuk melihat bagaimana cara kerjanya.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q51" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q51" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q51" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box verbal"> <!-- Pertanyaan 52 -->
+                    <p class="question">Anda suka bercerita kepada teman, keluarga, atau orang lain tentang pengalaman hidup Anda.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q52" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q52" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q52" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box social"> <!-- Pertanyaan 53 -->
+                    <p class="question">Anda merasa nyaman ketika berinteraksi dan berbicara dengan orang yang baru dikenal.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q53" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q53" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q53" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box solitary"> <!-- Pertanyaan 54 -->
+                    <p class="question">Anda lebih suka bekerja sendiri daripada bekerja dalam kelompok.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q54" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q54" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q54" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box visual"> <!-- Pertanyaan 55 -->
+                    <p class="question">Anda memiliki kemampuan untuk memvisualisasikan atau membayangkan sesuatu dengan sangat jelas dalam pikiran Anda.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q55" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q55" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q55" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box logical"> <!-- Pertanyaan 56 -->
+                    <p class="question">Anda suka memecahkan teka-teki, seperti Sudoku atau Rubik's Cube.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q56" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q56" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q56" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 9 -->
+            <div class="slide">
+                <div class="question-box aural"> <!-- Pertanyaan 57 -->
+                    <p class="question">Anda lebih suka mendengarkan musik daripada menonton film atau membaca buku.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q57" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q57" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q57" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box physical"> <!-- Pertanyaan 58 -->
+                    <p class="question">Anda suka berolahraga secara teratur, seperti jogging, berenang, atau latihan beban.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q58" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q58" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q58" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box verbal"> <!-- Pertanyaan 59 -->
+                    <p class="question">Anda suka membaca novel, cerita pendek, atau artikel di majalah atau koran.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q59" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q59" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q59" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box social"> <!-- Pertanyaan 60 -->
+                    <p class="question">Anda suka berpartisipasi dalam kegiatan kelompok, seperti klub, tim olahraga, atau proyek bersama.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q60" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q60" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q60" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                <div class="question-box logical"> <!-- Pertanyaan 61 -->
+                    <p class="question">Anda suka mengidentifikasi pola atau tren dalam data atau informasi yang Anda peroleh.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q61" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q61" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q61" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box aural"> <!-- Pertanyaan 62 -->
+                    <p class="question">Anda menyukai suasana dengan musik latar saat bekerja atau belajar.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q62" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q62" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q62" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box physical"> <!-- Pertanyaan 63 -->
+                    <p class="question">Anda lebih suka belajar dengan melakukan, menyentuh, atau bereksperimen secara langsung.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q63" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q63" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q63" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 10 -->
+            <div class="slide">
+                <div class="question-box verbal"> <!-- Pertanyaan 64 -->
+                    <p class="question">Anda sering menggunakan analogi atau metafora untuk menjelaskan ide kepada orang lain.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q64" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q64" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q64" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box social"> <!-- Pertanyaan 65 -->
+                    <p class="question">Anda lebih suka bekerja dalam tim daripada bekerja sendirian.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q65" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q65" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q65" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box solitary"> <!-- Pertanyaan 66 -->
+                    <p class="question">Anda sering meluangkan waktu untuk merenung dan mengevaluasi diri sendiri.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q66" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q66" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q66" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box visual"> <!-- Pertanyaan 67 -->
+                    <p class="question">Anda mudah memahami peta, diagram, atau grafik.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q67" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q67" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q67" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box logical"> <!-- Pertanyaan 68 -->
+                    <p class="question">Anda menikmati menyusun rencana atau strategi yang kompleks.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q68" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q68" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q68" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box aural"> <!-- Pertanyaan 69 -->
+                    <p class="question">Anda sering mendengarkan podcast, audiobook, atau musik untuk belajar atau hiburan.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q69" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q69" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q69" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+                
+                <div class="question-box physical"> <!-- Pertanyaan 70 -->
+                    <p class="question">Anda suka bekerja dengan tangan Anda, seperti membuat kerajinan, memasak, atau berkebun.</p>
+                    <div class="options">
+                        <span class="label">Tidak Setuju</span>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q70" value="0">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q70" value="1">
+                            <span class="option"></span>
+                        </label>
+                        <label>
+                            <input class="off" onclick="jawaban(this)" type="radio" name="q70" value="2">
+                            <span class="option"></span>
+                        </label>
+                        <span class="label">Setuju</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="navigation" id="navigation">
+            <button id="prev" class="nav-btn">◀</button>
+            <button id="next" class="nav-btn">▶</button>
+            <button id="submit" onclick="submit()">Lihat Hasil</button>
+        </div>
+
+
+
+        <div id="chart-container">
+        <canvas id="myChart"></canvas>
+        </div>
+
+        <div id="score">
+            <div class="style-container">
+                <div class="style-judul">
+                    <p class="style">
+                        
+                    </p>
+                    <span onclick="showDesc(this)">+</span>
+                </div>
+                <p class="desc">
+                    
+                </p>
+            </div>
+            <div class="style-container">
+                <div class="style-judul">
+                    <p class="style">
+                        
+                    </p>
+                    <span onclick="showDesc(this)">+</span>
+                </div>
+                <p class="desc">
+                    
+                </p>
+            </div>
+            <div class="style-container">
+                <div class="style-judul">
+                    <p class="style">
+                        
+                    </p>
+                    <span onclick="showDesc(this)">+</span>
+                </div>
+                <p class="desc">
+                    
+                </p>
+            </div>
+            <div class="style-container">
+                <div class="style-judul">
+                    <p class="style">
+                        
+                    </p>
+                    <span onclick="showDesc(this)">+</span>
+                </div>
+                <p class="desc">
+                    
+                </p>
+            </div>
+            <div class="style-container">
+                <div class="style-judul">
+                    <p class="style">
+                        
+                    </p>
+                    <span onclick="showDesc(this)">+</span>
+                </div>
+                <p class="desc">
+                    
+                </p>
+            </div>
+            <div class="style-container">
+                <div class="style-judul">
+                    <p class="style">
+                        
+                    </p>
+                    <span onclick="showDesc(this)">+</span>
+                </div>
+                <p class="desc">
+                    
+                </p>
+            </div>
+            <div class="style-container">
+                <div class="style-judul">
+                    <p class="style">
+                        
+                    </p>
+                    <span onclick="showDesc(this)">+</span>
+                </div>
+                <p class="desc">
+                    
+                </p>
+            </div>
+            
+
+            <!--learning styles-->
+        </div>
+
+        <div id="refresh-container">
+        <button id="refresh" onclick="refresh()">Start Over</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
