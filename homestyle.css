@@ -51,6 +51,22 @@ body {
     border-radius: 20px;
 }
 
+.title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#identitas1{
+    font-size: 12px;
+    margin: 3px;
+}
+
+#identitas2{
+    font-size: 12px;
+}
+
 .navdiv{
     display: flex;
     justify-content: space-between;
