@@ -91,7 +91,6 @@ function jawaban(choice){
     let btns = document.getElementsByName(status);
     console.log(btns.length);
     for(i=0; i<3; i++){
-        console.log(btns[i].classList);
         btns[i].classList.remove("off")
         btns[i].classList.remove("on")
         btns[i].classList.add("off");
@@ -99,6 +98,10 @@ function jawaban(choice){
 
     choice.classList.remove("off");
     choice.classList.add("on");
+    for(i=0; i<3; i++){
+        console.log(btns[i]);
+    }
+    btns = [];
 }
 
 function submit(){
@@ -113,6 +116,7 @@ function submit(){
             let el = masukan[i];
             let tipe = el.parentElement.parentElement.parentElement.classList[1];
             let val = parseInt(el.value);
+            console.log(val);
 
             switch(tipe){
                 case "visual":
@@ -165,7 +169,14 @@ function buildChart(){
         },
         options:{
             responsive: true,
-            maintainAspectRatio: false
+            maintainAspectRatio: false,
+            scale:{
+                ticks:{
+                    min: 0,
+                    max: 20,
+                    stepSize: 5
+                }
+            }
         }
 
     })
