@@ -41,6 +41,24 @@ li a {
     margin-right: 8px;
 }
 
+.title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#identitas1{
+    font-size: 12px;
+    margin: 3px;
+}
+
+#identitas2{
+    font-size: 12px;
+}
+
+
+
 /*Teks tengah */
 .title {
     display: inline-block;
@@ -163,9 +181,8 @@ h1 {
     box-sizing: border-box;
     text-align: center;
     position: relative;
-    border: 5px solid black; /* Dotted border */
-    border-image: linear-gradient(90deg, #fff, #afafaf, #f4e2ff, #a5a5a5) 0.7;
     border-radius: 20px;
+    border:2px solid rgb(249, 239, 255, 0.4);
 }
 
 .question-box::after {
